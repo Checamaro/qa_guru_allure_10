@@ -3,8 +3,6 @@ from selene.support.shared.jquery_style import s
 
 
 def test_github():
-    browser.config.window_width = 1500
-    browser.config.window_height = 900
     browser.open('')
     s(".header-search-button").click()
     s("#query-builder-test").send_keys("eroshenkoam/allure-example")
